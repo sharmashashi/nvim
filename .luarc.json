@@ -1,0 +1,11 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "hoverDocumentation",
+        "win_id",
+        "start_dap",
+        "run_dap",
+        "flutter_device_id",
+        "flutter_terminal_buf"
+    ]
+}
