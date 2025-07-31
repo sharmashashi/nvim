@@ -2,7 +2,14 @@
 
 -- Function to run shell commands
 function run_shell_command(command)
-	local handle = io.popen(command .. " &", "r")
+	local handle
+	if vim.loop.os_uname().sysname == "Darwin" then
+		-- macOS
+		handle = io.popen(command, "r+")
+	else
+		-- Linux and others
+		handle = io.popen(command .. " &", "r")
+	end
 	local result = handle:read("*a")
 	handle:close()
 	return result

@@ -48,7 +48,7 @@ return {
     zindex = 1, -- determines if window is on top or below other floating windows
   },
 
-  show_help = true, -- Shows help message as virtual lines when waiting for user input
+  show_help = false, -- Shows help message as virtual lines when waiting for user input
   highlight_selection = true, -- Highlight selection
   highlight_headers = true, -- Highlight headers in chat, disable if using markdown renderers (like render-markdown.nvim)
   references_display = 'virtual', -- 'virtual', 'write', Display references in chat as virtual text or write to buffer
@@ -64,7 +64,7 @@ return {
   proxy = nil, -- [protocol://]host[:port] Use this proxy
   allow_insecure = false, -- Allow insecure server connections
 
-  chat_autocomplete = true, -- Enable chat autocompletion (when disabled, requires manual `mappings.complete` trigger)
+  chat_autocomplete = false, -- Enable chat autocompletion (when disabled, requires manual `mappings.complete` trigger)
 
   log_path = vim.fn.stdpath('state') .. '/CopilotChat.log', -- Default path to log file
   history_path = vim.fn.stdpath('data') .. '/copilotchat_history', -- Default path to stored history
