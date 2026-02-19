@@ -34,6 +34,6 @@ return {
 				colors.bg_statusline = "#1e1e2e"
 			end,
 		})
-		--vim.api.nvim_command("colorscheme tokyonight-night")
+		vim.api.nvim_command("colorscheme tokyonight-night")
 	end,
 }
