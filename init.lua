@@ -25,6 +25,9 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.api.nvim_command("set relativenumber")
 
+-- Set up foldmethod for ufo plugin
+vim.opt.foldmethod = "manual"
+
 require("lazy").setup("plugins")
 require("telescope").load_extension("ui-select")
 require("utils")
