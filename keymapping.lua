@@ -73,6 +73,3 @@ vim.api.nvim_set_keymap("n", "<leader>ll", ":b#<CR>", {
 	noremap = true,
 	silent = true,
 })
-
--- CodeCompanion
-vim.api.nvim_set_keymap("n", "<leader>ch", ":CodeCompanionChat Toggle<CR>", { noremap = true, silent = true })
